@@ -13,6 +13,7 @@ int main()
     a -> data = 123;
 
     cout << a << endl; 
+    cout << &a << endl;
     cout << a -> data << endl;
     delete[] a;
 
