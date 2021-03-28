@@ -14,6 +14,7 @@ int main()
 
     cout << a << endl; 
     cout << a -> data << endl;
+    delete[] a;
 
     return 0;
 }
