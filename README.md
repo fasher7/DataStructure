@@ -1,4 +1,4 @@
-# DataStructure
+# DataStructure (csc203)
 every little thing related to this course.
 1) more uses of * & *& **
 2) Dynamic array
