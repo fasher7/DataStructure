@@ -6,5 +6,6 @@ every little thing related to this course.
 4) File <fstream> <sstream> <string>
 5) STL <algorithm>
 6) Struct x. x->
-7) MORE TO BE ADDED
-8) 
+7) Link List
+8) MORE TO BE ADDED
+9) 
