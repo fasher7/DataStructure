@@ -23,12 +23,14 @@ int main()
     sunflower -> next = rose;
 
     int i = 6;
+    flower* f = rose;
     while (i--)
     {
-        cout << rose -> price << endl;
-        cout << rose << endl;
-        rose = rose -> next;
+        cout << f -> price << endl;
+        cout << f << endl;
+        f = f -> next;
     }
 
     return 0;
 }
+
