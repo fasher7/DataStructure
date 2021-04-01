@@ -3,9 +3,28 @@ using namespace std;
 
 struct flower
 {
-    int price = 10;
+    int price = 0;
     flower* nextFlower = nullptr;
 };
+
+void removeValue(flower* rose)  // works sane with *& as well
+{
+    //to delete sunflower from the link list
+    flower* f = rose;
+    while (f -> nextFlower != nullptr)
+    {
+        if (f -> nextFlower -> price == 30)  //tulip's next is sunflower
+        {
+            flower *junk = f -> nextFlower; //took sunflower's address
+            f -> nextFlower = f -> nextFlower -> nextFlower; //avoided sunflower; f == lily
+            delete junk;
+        }
+        else
+        {
+            f = f -> nextFlower;
+        }
+    }
+}
 
 int main()
 {
@@ -29,23 +48,9 @@ int main()
     cout << "Tulip: " << tulip << endl;
     cout << "Sunflower: " << sunflower << endl;
     cout << "Lily: " << lily << endl;
-
-    //to delete sunflower from the link list
-    flower* f = rose;
-    while (f -> nextFlower != nullptr)
-    {
-        if (f -> nextFlower -> price == 30)  //tulip's next is sunflower
-        {
-            flower *junk = f -> nextFlower; //took sunflower's address
-            f -> nextFlower = f -> nextFlower -> nextFlower; //avoided sunflower; f == lily
-            delete junk;
-        }
-        else
-        {
-            f = f -> nextFlower;
-        }
-    }
-
+    
+    removeValue(rose);
+    
     cout << "Rose: " << rose -> price << endl;
     cout << "Tulip: " << tulip -> price << endl;
     cout << "Sunflower: " << sunflower -> price << endl; //no value so garbage
