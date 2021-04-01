@@ -54,5 +54,6 @@ int main()
     cout << rose -> nextFlower -> nextFlower << endl; 
     // ^ printed lily's address instead of sunflower as it got deleted
     // The variable sunflower didn't get deleted but from the list it got deleted
+    
     return 0;
 }
