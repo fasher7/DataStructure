@@ -3,7 +3,7 @@ using namespace std;
 
 struct flower
 {
-    int price = 10;
+    int price = 0;
     flower* nextFlower = nullptr;
 };
 
