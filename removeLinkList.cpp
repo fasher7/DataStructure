@@ -30,6 +30,7 @@ int main()
     cout << "Sunflower: " << sunflower << endl;
     cout << "Lily: " << lily << endl;
 
+    //to delete sunflower from the link list
     flower* f = rose;
     while (f -> nextFlower != nullptr)
     {
