@@ -26,7 +26,6 @@ void addValue(node*& n, int data)
         p -> val = data;
         current -> next = p;
     }
-    return;
 }
 
 void printList(node* n)
