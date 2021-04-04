@@ -7,15 +7,6 @@ struct node
     node* next = nullptr; 
 };
 
-void printList(node* n)
-{
-    while (n != nullptr)
-    {
-        cout << n -> val << " " << n << endl;
-        n = n -> next;
-    }
-}
-
 void addValue(node*& n, int data)
 {
     if (n == nullptr)
@@ -36,6 +27,16 @@ void addValue(node*& n, int data)
         current -> next = p;
     }
     return;
+}
+
+void printList(node* n)
+{
+    while (n != nullptr)
+    {
+        cout << n -> val << " " << n << endl;
+        n = n -> next;
+    }
+    cout << endl;
 }
 
 int main()
