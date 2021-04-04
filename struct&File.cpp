@@ -45,7 +45,7 @@ void writetoFile (ofstream& myfile, patient& p)
 
 int main()
 {
-    ofstream myfile("Code1.txt",  ios::app);
+    ofstream myfile("Code1.txt", ios::app);
 
     if (!myfile.is_open())
     {
