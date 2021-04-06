@@ -30,7 +30,7 @@ void addValue(node*& n, int data)
 
 void removeValue(node*& n, int data)
 {
-    while( n != nullptr && n -> val == data) 
+    while(n -> val == data) 
     { 
         node* j = n;
         n = n -> next;
