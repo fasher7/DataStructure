@@ -65,7 +65,7 @@ int main()
     addValue (sll, 10);  // 0
     addValue (sll, 20);  // 1
     addValue (sll, 30);  // 2 
-    addValue (sll, 40);  // 3 - 4th index
+    addValue (sll, 40);  // 3 - 3rd index
     addValue (sll, 50);  // 4
     addValue (sll, 60);  // 5 
     printList(sll);
