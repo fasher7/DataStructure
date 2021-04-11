@@ -19,6 +19,7 @@ void swapAddress(int *&a, int *&b)
     a = b;
     b = temp;
 }
+
 void enlarge(myStack *&st)
 {
     st->size = st->size * 2;
@@ -76,14 +77,12 @@ int main()
     push(st, 70);
     push(st, 70);
     push(st, 70);
+    
     cout << pop(st) << endl;
     cout << pop(st) << endl;
-
     cout << pop(st) << endl;
     cout << pop(st) << endl;
-
     cout << pop(st) << endl;
-
     cout << pop(st) << endl;
     cout << pop(st) << endl;
     cout << pop(st) << endl;
