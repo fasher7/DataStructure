@@ -9,5 +9,6 @@ every little thing related to this course.
 7) Linked List
 8) Stack
 9) Queue
-10) MORE TO BE ADDED
-11) 
+10) Binary Search
+11) MORE TO BE ADDED
+12) 
