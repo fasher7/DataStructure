@@ -9,6 +9,7 @@ every little thing related to this course.
 7) Linked List (cll, sll, dll)
 8) Stack
 9) Queue
-10) Binary Search
-11) MORE TO BE ADDED
-12) 
+10) Binary Search Tree
+11) Graph
+12) MORE TO BE ADDED
+13) 
