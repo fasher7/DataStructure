@@ -16,10 +16,10 @@ int main()
     node *a1 = new node(1);
     node *a2 = new node(2);
     a1->next = a2;
-    node *b1 = new node(10);
-    node *b2 = new node(20);
-    b1->next = b2;
-    node *c1 = new node(100);
+    node *b1 = new node(2);
+    node *c1 = new node(0);
+    node *c2 = new node(1);
+    c1->next = c2;
 
     node *adjList[3];
     adjList[0] = a1;
@@ -29,6 +29,7 @@ int main()
     for (int i = 0; i < 3; ++i)
     {
         node *x = adjList[i];
+        cout << i << ": ";
         while (x != nullptr)
         {
             cout << x->data << " ";
