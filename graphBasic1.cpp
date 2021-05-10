@@ -21,7 +21,9 @@ int main()
     node *c2 = new node(1);
     c1->next = c2;
 
-    node *adjList[3];
+    //node *adjList[3];
+    node **adjList = new node *[3];
+    
     adjList[0] = a1;
     adjList[1] = b1;
     adjList[2] = c1;
