@@ -16,15 +16,35 @@ void multarr(double arr[], int size)
 
 int main()
 {
-    double arr[5] = {-8, 2.5, 7, -23, 5};
+    double arr[5] = {-8, 2.5, 9, -23, 5};
     double *p;
-    p = arr;
+
+    p = arr; //&arr[0]
     cout << "Using Pointers to find Array Address" << endl;
     cout << p << endl;
     cout << *p << endl;
     cout << p + 1 << endl;
     cout << *(p + 1) << endl;
+    cout << endl;
+
+    p = arr; //&arr[0]
+    cout << "Using Pointers to find Array Address" << endl;
+    cout << &p[0] << endl;
+    cout << p[0] << endl;
+    cout << &p[1] << endl;
+    cout << p[1] << endl;
+    cout << endl;
+
+    p = arr; //&arr[0]
+    cout << "Using Pointers to find Array Address" << endl;
+    cout << p << endl;
+    cout << *p << endl;
+    cout << ++p << endl;
+    cout << *p << endl;
+    cout << endl;
+
     cout << "Address of the Pointer: " << &p << endl;
+
     // we can find the total bytes of this array using sizeof(arr)
     multarr(arr, 5);
 
