@@ -35,6 +35,7 @@ int main()
         delete [] firstp[b];
     }
     delete [] firstp;
+    firstp = nullptr;
 
     return 0;
 }
